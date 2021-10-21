@@ -1,6 +1,7 @@
 module V1
   class GreetingsController < ApplicationController
     def index
+      p random_greeting
       render json: {
         greetings: [
           {
